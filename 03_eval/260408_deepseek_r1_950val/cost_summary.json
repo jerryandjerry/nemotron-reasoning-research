@@ -1,0 +1,12 @@
+{
+  "model": "deepseek-reasoner",
+  "max_tokens": 32768,
+  "concurrency": 50,
+  "total_samples": 950,
+  "overall_accuracy": 0.7158,
+  "input_tokens": 108404,
+  "output_tokens": 10696390,
+  "reasoning_tokens": 10582114,
+  "total_cost_usd": 23.4847,
+  "elapsed_seconds": 14182.1
+}

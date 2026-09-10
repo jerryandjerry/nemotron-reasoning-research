@@ -1,0 +1,17 @@
+# AutoDL Inference Instance Setup
+# Python 3.12 (miniconda)
+# Install: pip install -r autodl_requirements.txt
+#
+# IMPORTANT: Install in this exact order to avoid torch version conflicts.
+# vllm pins torch==2.10.0. Installing torch separately may cause
+# duplicate template errors from stale torch artifacts.
+#
+# CLEAN INSTALL (recommended):
+#   pip uninstall -y torch torchvision torchaudio vllm
+#   rm -rf /root/.cache/torch /root/.cache/vllm /root/.triton
+#   pip install vllm
+#
+# This will pull torch==2.10.0 and all other deps automatically.
+
+vllm==0.19.0
+pandas
