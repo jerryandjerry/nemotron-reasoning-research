@@ -1,0 +1,9 @@
+# numeq (NumericEq drop-mismatch) — TRAINING_INFO
+
+- **Run name:** 260525_2006 / relaunch (run #2). Instance 21578 (RTX PRO 6000 Blackwell), SSH_LOGIN_6000_QLORA_SFT_2.
+- **Data:** `260525_huikang_NumericEq.csv` (md5 f86286ebcbf890243742f0a17908183b), 7077 unique → **7849 expanded**, 246 steps. = the 0.86 (#16) ID set with numeric-equation CoTs swapped to new-solver, **dropping the 171 lower-confidence rows** (102 GT-mismatch + 69 over-long via oversampling=0); 12 mismatches survive into training. vs allEq which keeps all 732.
+- **Recipe (= 0.86 #16):** Unsloth + manual loop + CCE + manual lm_head LoRA, transformers 4.56.2. r32/α32/dropout0, no-tie + LIVE out_proj (‖B‖≈0.74), AdamW lr 2e-4→0, bs32 (micro4 ga8), seq8192, seed42. Env `MOE_TIE=0 USE_MEM_EFF=0 FRESH_START=1`. Endpoint-only (no soup).
+- **⚠️ Run #1 FAILED — non-deterministic grad explosion:** first launch hit a single unclipped gradient spike at **step 19 (grad_norm 2830** vs normal ~0.1); with `max_norm=1e9` (no clip) it knocked the weights out of the basin → loss stuck ~0.07–0.11 (vs recipe's ~0.005). Verified NOT a data/batch/code bug (data row-by-row valid; step-19 batch = 32 normal GT-matched samples, normal token lengths). **Relaunched as-is (same seed)** per user → step-19 grad_norm 0.053 (normal), no spike — confirming the explosion is a bf16/MoE-atomicAdd non-deterministic event that doesn't reproduce. Run #2 converged cleanly. Failed-run log preserved: `train_numeq_full_FAILED_gradexplode.txt`. See memory `project_grad_explosion_nondeterministic`.
+- **Result (run #2):** clean convergence, no grad spikes, final loss **0.0032**, time 3.99 hrs.
+- **Endpoint:** `submission_newdata_numeq_notie_outproj.zip` (3,831,874,002 bytes, md5 **dbce12a4a015b4664705320547f9addf**). Checkpoint: `checkpoint-246_loss0.0032_*.zip` (6.2 GB).
+- **Purpose:** A/B vs allEq (keep-all) and vs 0.86. Kaggle score pending.

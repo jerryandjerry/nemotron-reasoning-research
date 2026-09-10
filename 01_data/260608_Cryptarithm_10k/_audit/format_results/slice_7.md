@@ -1,0 +1,72 @@
+| id | score | deviations |
+|---|---|---|
+| crypt10k_007002 | 10 | none |
+| crypt10k_007008 | 10 | none |
+| crypt10k_007025 | 10 | none |
+| crypt10k_007027 | 10 | none |
+| crypt10k_007029 | 10 | none |
+| crypt10k_007040 | 10 | none |
+| crypt10k_007043 | 10 | none |
+| crypt10k_007048 | 10 | none |
+| crypt10k_007061 | 10 | none |
+| crypt10k_007064 | 10 | none |
+| crypt10k_007066 | 10 | none |
+| crypt10k_007075 | 10 | none |
+| crypt10k_007086 | 10 | none |
+| crypt10k_007110 | 10 | none |
+| crypt10k_007138 | 10 | none |
+| crypt10k_007151 | 10 | none |
+| crypt10k_007165 | 10 | none |
+| crypt10k_007172 | 10 | none |
+| crypt10k_007201 | 10 | none |
+| crypt10k_007216 | 10 | none |
+| crypt10k_007217 | 10 | none |
+| crypt10k_007220 | 10 | none |
+| crypt10k_007221 | 10 | none |
+| crypt10k_007232 | 10 | none |
+| crypt10k_007254 | 10 | none |
+| crypt10k_007287 | 10 | none |
+| crypt10k_007294 | 10 | none |
+| crypt10k_007311 | 10 | none |
+| crypt10k_007315 | 10 | none |
+| crypt10k_007323 | 10 | none |
+| crypt10k_007332 | 10 | none |
+| crypt10k_007352 | 10 | none |
+| crypt10k_007358 | 10 | none |
+| crypt10k_007398 | 10 | none |
+| crypt10k_007399 | 10 | none |
+| crypt10k_007407 | 10 | none |
+| crypt10k_007409 | 10 | none |
+| crypt10k_007430 | 10 | none |
+| crypt10k_007436 | 10 | none |
+| crypt10k_007456 | 9 | §1.5 non-template prose narrowing line `EX5: ~sub shows a 1-digit result, so the leading digits differ by at most 2, \|C-G\| ≤ 2 -> G={4,5}` (L123) — not the standard witness-cut delta form |
+| crypt10k_007468 | 10 | none |
+| crypt10k_007486 | 10 | none |
+| crypt10k_007489 | 10 | none |
+| crypt10k_007493 | 9 | §1.5 non-template prose narrowing line `EX[N]: ~sub shows a 1-digit result, so … \|D-G\| ≤ 2 -> …` (L87,155,184,201) |
+| crypt10k_007497 | 10 | none |
+| crypt10k_007537 | 10 | none |
+| crypt10k_007561 | 10 | none |
+| crypt10k_007575 | 10 | none |
+| crypt10k_007588 | 10 | none |
+| crypt10k_007615 | 10 | none |
+| crypt10k_007637 | 9 | §1.5 non-template prose narrowing line `EX5: ~sub shows a 1-digit result, … \|I-A\| ≤ 2 -> …` (L92,176) |
+| crypt10k_007645 | 10 | none |
+| crypt10k_007650 | 10 | none |
+| crypt10k_007696 | 10 | none |
+| crypt10k_007701 | 10 | none |
+| crypt10k_007712 | 10 | none |
+| crypt10k_007763 | 10 | none |
+| crypt10k_007795 | 10 | none |
+| crypt10k_007815 | 10 | none |
+| crypt10k_007824 | 10 | none |
+| crypt10k_007843 | 10 | none |
+| crypt10k_007844 | 10 | none |
+| crypt10k_007863 | 9 | §1.5 non-template prose narrowing line `EX3: ~sub shows a 1-digit result, … \|E-I\| ≤ 2 -> …` (L125) |
+| crypt10k_007879 | 10 | none |
+| crypt10k_007884 | 10 | none |
+| crypt10k_007893 | 10 | none |
+| crypt10k_007907 | 10 | none |
+| crypt10k_007921 | 9 | §1.5 non-template prose narrowing line `EX3: ~sub shows a 1-digit result, … \|E-J\| ≤ 2 -> …` (L97,102,111,123,150) |
+| crypt10k_007964 | 10 | none |
+| crypt10k_007983 | 10 | none |

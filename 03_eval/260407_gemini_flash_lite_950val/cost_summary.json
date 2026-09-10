@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.1-flash-lite-preview",
+  "thinking_level": "HIGH",
+  "total_samples": 950,
+  "overall_accuracy": 0.4642,
+  "input_tokens": 132824,
+  "output_tokens": 351424,
+  "thinking_tokens": 5401367,
+  "total_cost_usd": 0.5603,
+  "elapsed_seconds": 2702.9
+}

@@ -1,0 +1,10 @@
+torch==2.8.0
+transformers==4.56.2
+peft==0.18.1
+trl==1.0.0
+bitsandbytes==0.49.2
+swanlab==0.7.15
+datasets
+accelerate
+safetensors
+polars
